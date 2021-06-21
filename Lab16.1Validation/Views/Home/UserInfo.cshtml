@@ -1,0 +1,21 @@
+﻿@model List<NUser>
+
+@{
+    ViewData["Title"] = "UserInfo";
+}
+
+<h1>Thank you for registering!</h1>
+
+@foreach (NUser newuser in NUser.FullInfo)
+{
+<div style="font-weight:bold">
+    First Name: &nbsp; @newuser.firstname <br />
+    Last Name: &nbsp; @newuser.lastname <br />
+    Email: &nbsp; @newuser.email <br />
+    Password: &nbsp; @newuser.password <br />
+    Re-type Password: &nbsp; @newuser.confirmpassword <br />
+    <br /><br />
+</div>
+}
+
+

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Lab16.1 Client-Side Validation</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <style>
+        a {
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Times'
+        }
+    </style>
+
+    <style>
+        /* Add some padding on document's body to prevent the content
+        to go underneath the header and footer */
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+
+        .fixed-header, .fixed-footer {
+            width: 100%;
+            position: fixed;
+            background: blue;
+            padding: 10px 0;
+            color: #fff;
+        }
+
+        .fixed-header {
+            top: 0;
+        }
+
+        .fixed-footer {
+            bottom: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto; /* Center the DIV horizontally */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 7px 25px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="/Home/Index">Home</a>
+                <a href="/Home/RegForm">Register</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <p>"In art as in love, instinct is enough." ~ Anatole France</p>
+    </div>
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; Lab16.1 Client-Side Validation</div>
+    </div>
+
+
+    @RenderBody()
+</body>
+</html>
